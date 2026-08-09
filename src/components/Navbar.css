@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 8%;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.nav-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d4af37; /* สีทองวินเทจ */
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d4af37;
+}
+
+.btn-booking {
+  background-color: #d4af37;
+  color: #1a1a1a !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: bold !important;
+}
+
+.btn-booking:hover {
+  background-color: #b89628;
+}
