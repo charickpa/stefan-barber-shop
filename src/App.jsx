@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -10,24 +11,25 @@ import Booking from './pages/Booking';
 
 function App() {
   return (
-    <Router>
-      <div className="bg-zinc-950 min-h-screen flex flex-col justify-between">
-        <Navbar />
-        
-        {/* เปลี่ยน flex-grow เป็น grow ตรงนี้ */}
-        <main className="grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/booking" element={<Booking />} />
-          </Routes>
-        </main>
+    <LanguageProvider>
+      <Router>
+        <div className="bg-zinc-950 min-h-screen flex flex-col justify-between">
+          <Navbar />
+          
+          <main className="grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/booking" element={<Booking />} />
+            </Routes>
+          </main>
 
-        <Footer />
-      </div>
-    </Router>
+          <Footer />
+        </div>
+      </Router>
+    </LanguageProvider>
   );
 }
 
