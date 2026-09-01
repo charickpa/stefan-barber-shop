@@ -4,10 +4,102 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/stefan-barber-shop/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>stefan-barber-shop</title>
+
+    <!-- 1. Title: ใส่คำค้นหายอดนิยมทั้งไทยและอังกฤษ -->
+    <title>
+      Stefan Master Club | ร้านตัดผมภูเก็ต บาร์เบอร์ภูเก็ต Barber Shop Phuket
+      Haircut
+    </title>
+
+    <!-- 2. Description: กระชับ ดึงดูด น่าคลิก และมีคีย์เวิร์ดครบ -->
+    <meta
+      name="description"
+      content="Stefan Master Club ร้านตัดผมชายพรีเมียมในภูเก็ต Barber Shop Phuket บริการตัดผมชาย สระผมแต่งทรง โกนหนวด ทำสีผม ไฮไลท์ และทรีตเมนต์ จองคิวออนไลน์ได้ทันที"
+    />
+
+    <!-- 3. Keywords: ครอบคลุมทุกคำที่คนจะพิมพ์ค้นหาบน Google -->
+    <meta
+      name="keywords"
+      content="ร้านตัดผมภูเก็ต, ร้านตัดผมชายภูเก็ต, บาร์เบอร์ภูเก็ต, Barber shop Phuket, Best barber Phuket, Haircut Phuket, Men haircut Phuket, Stefan Master Club, ร้านตัดผมป่าตอง, ร้านตัดผมเมืองภูเก็ต, โกนหนวดภูเก็ต, ทำสีผมชายภูเก็ต"
+    />
+    <meta name="author" content="Stefan Master Club" />
+
+    <!-- 4. Geo Tags (ระบุพิกัดพื้นที่ เพื่อให้ Google รู้ว่าร้านอยู่อำเภอ/จังหวัดไหน ดันขึ้น Local Search) -->
+    <meta name="geo.region" content="TH-83" />
+    <meta name="geo.placename" content="Phuket" />
+
+    <!-- 5. Open Graph / Social Media (เวลาแชร์ลิงก์ใน Facebook, LINE, WhatsApp รูปและข้อความจะขึ้นสวยงาม) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Stefan Master Club | Premium Barber Shop Phuket ร้านตัดผมภูเก็ต"
+    />
+    <meta
+      property="og:description"
+      content="ร้านตัดผมชายระดับพรีเมียมในภูเก็ต ตัดแต่งทรงผม หนวดเครา ทำสีผม จองคิวง่ายๆ ผ่านเว็บ"
+    />
+    <meta
+      property="og:image"
+      content="https://charickpa.github.io/stefan-barber-shop/images/HC.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://charickpa.github.io/stefan-barber-shop"
+    />
+    <meta property="og:site_name" content="Stefan Master Club" />
+
+    <!-- 6. Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Stefan Master Club | Barber Shop Phuket"
+    />
+    <meta
+      name="twitter:description"
+      content="Best Men's Haircut & Grooming Services in Phuket."
+    />
+    <meta
+      name="twitter:image"
+      content="https://charickpa.github.io/stefan-barber-shop/images/HC.jpg"
+    />
     <script type="module" crossorigin src="/stefan-barber-shop/assets/index-BsJrhUzs.js"></script>
     <link rel="stylesheet" crossorigin href="/stefan-barber-shop/assets/index-zJQL7WXq.css">
   </head>
+  <!-- Structured Data บอก Google ว่าเป็นร้านค้า local business -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarberShop",
+      "name": "Stefan Master Club",
+      "image": "https://charickpa.github.io/stefan-barber-shop/images/HC.jpg",
+      "url": "https://charickpa.github.io/stefan-barber-shop",
+      "priceRange": "300฿ - 2500฿",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Phuket",
+        "addressCountry": "TH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 7.8804,
+        "longitude": 98.3923
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "10:00",
+        "closes": "20:00"
+      }
+    }
+  </script>
   <body>
     <div id="root"></div>
   </body>
