@@ -6,8 +6,9 @@ const translations = {
     home: "Home",
     services: "Services & Pricing",
     gallery: "Gallery",
+    booking: "Booking",
     contact: "Contact Us",
-    bookNow: "Call to Book",
+    bookNow: "Book Online",
     
     // Home Hero
     heroTag: "STEFAN MASTER CLUB PHUKET",
@@ -51,8 +52,8 @@ const translations = {
     brandDesc: "Elevate your style and confidence with our premium haircut and grooming services in Phuket.",
     quickLinks: "Quick Links",
     hours: "Opening Hours",
-    satThuHours: "Sat - Thu: 10:00 AM - 09:00 PM",
-    friHours: "Friday: 02:00 PM - 09:00 PM",
+    satThuHours: "Sat - Thu: 10:00 AM - 07:00 PM",
+    friHours: "Friday: 02:00 PM - 07:00 PM",
     contactInfo: "Contact Us",
     address: "322, Moo 2, Srisoontorn Road, Bangtao Beach, Cherngtalay Thalang, Phuket 83110",
   },
@@ -61,8 +62,9 @@ const translations = {
     home: "หน้าแรก",
     services: "บริการ & ราคา",
     gallery: "ผลงานทรงผม",
+    booking: "จองคิวออนไลน์",
     contact: "ติดต่อเรา",
-    bookNow: "โทรจองคิว",
+    bookNow: "จองคิวออนไลน์",
 
     // Home Hero
     heroTag: "STEFAN MASTER CLUB PHUKET",
@@ -106,8 +108,8 @@ const translations = {
     brandDesc: "ยกระดับสไตล์และบุคลิกภาพของคุณด้วยบริการตัดผมและเซ็ตทรงระดับพรีเมียม",
     quickLinks: "เมนูด่วน",
     hours: "เวลาเปิดทำการ",
-    satThuHours: "เสาร์ - พฤหัสบดี: 10:00 - 21:00 น.",
-    friHours: "ศุกร์: 14:00 - 21:00 น.",
+    satThuHours: "เสาร์ - พฤหัสบดี: 10:00 - 19:00 น.",
+    friHours: "ศุกร์: 14:00 - 19:00 น.",
     contactInfo: "ติดต่อเรา",
     address: "322 หมู่ 2 ถ.ศรีสุนทร หาดบางเทา ต.เชิงทะเล อ.ถลาง จ.ภูเก็ต 83110",
   }

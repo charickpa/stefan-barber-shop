@@ -12,7 +12,7 @@ export default function Services() {
         ? "Professional haircut, hair wash, and precision styling." 
         : "ตัดผมแต่งทรงประณีต สระผมทำความสะอาด และเซ็ตทรงสวยงาม",
       price: "900 ฿",
-      time: "45 mins"
+      time: "60 mins"
     },
     {
       title: lang === 'en' ? "Haircut" : "ตัดผม",
@@ -35,7 +35,7 @@ export default function Services() {
       desc: lang === 'en' 
         ? "Complete grooming package including professional haircut and beard styling." 
         : "ดูแลครบสูตร บริการตัดผมพร้อมตัดแต่งทรงหนวดเคราเนี๊ยบๆ",
-      price: "1,200 ฿",
+      price: "1,000 ฿",
       time: "60 mins"
     },
     {
@@ -43,8 +43,8 @@ export default function Services() {
       desc: lang === 'en' 
         ? "Specialized scissor technique for long hair styling combined with full beard grooming." 
         : "เทคนิคตัดผมยาวด้วยกรรไกรโดยเฉพาะ พร้อมตกแต่งทรงหนวดเคราครบชุด",
-      price: "1,000 ฿",
-      time: "75 mins"
+      price: "1,200 ฿",
+      time: "60 mins"
     },
     {
       title: lang === 'en' ? "Kids Haircut" : "ตัดผมเด็ก",
@@ -52,7 +52,7 @@ export default function Services() {
         ? "Gentle and patient haircut service for children." 
         : "บริการตัดผมเด็กด้วยความประณีต เอาใจใส่ และใจเย็น",
       price: "500 ฿",
-      time: "30 mins"
+      time: ""
     },
     {
       title: lang === 'en' ? "Head Shave" : "โกนหัว (Head Shave)",
@@ -67,8 +67,8 @@ export default function Services() {
       desc: lang === 'en' 
         ? "Quick and gentle waxing service for ear or nose hair removal." 
         : "บริการแว็กซ์กำจัดขนหูหรือขนจมูกอย่างอ่อนโยนและรวดเร็ว",
-      price: "500 ฿",
-      time: "15 mins"
+      price: "- ฿",
+      time: "30 mins"
     },
     {
       title: lang === 'en' ? "Shampoo & Styling" : "สระผม & เซ็ตทรง",
@@ -77,6 +77,22 @@ export default function Services() {
         : "สระผมผ่อนคลาย นวดหนังศีรษะ เป่าแห้ง และเซ็ตทรงด้วยผลิตภัณฑ์พรีเมียม",
       price: "300 ฿",
       time: "30 mins"
+    },
+    {
+      title: lang === 'en' ? "Highlights" : "ทำไฮไลท์สีผม",
+      desc: lang === 'en' 
+        ? "Professional hair highlighting to add dimension and contrast to your look." 
+        : "บริการทำไฮไลท์เพิ่มมิติและความโดดเด่นให้ทรงผมอย่างมืออาชีพ",
+      price: "2500+ ฿",
+      time: "60-90 mins"
+    },
+    {
+      title: lang === 'en' ? "Hair Color" : "ทำสีผม",
+      desc: lang === 'en' 
+        ? "Full-head hair coloring using premium products that protect your hair." 
+        : "เปลี่ยนสีผมทั่วศีรษะด้วยผลิตภัณฑ์คุณภาพพรีเมียม ถนอมเส้นผมและหนังศีรษะ",
+      price: "2500+ ฿",
+      time: "60-90 mins"
     }
   ];
 

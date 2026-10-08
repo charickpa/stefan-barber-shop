@@ -55,18 +55,18 @@ export default function Contact() {
               <ul className="space-y-2 text-sm text-zinc-300">
                 <li className="flex justify-between border-b border-zinc-800/80 pb-2">
                   <span>SATURDAY - THURSDAY</span>
-                  <span className="font-bold text-zinc-100">10:00 AM - 09:00 PM</span>
+                  <span className="font-bold text-zinc-100">10:00 AM - 07:00 PM</span>
                 </li>
                 <li className="flex justify-between pt-1">
                   <span className="text-amber-400 font-semibold">FRIDAY</span>
-                  <span className="font-bold text-amber-400">02:00 PM - 09:00 PM</span>
+                  <span className="font-bold text-amber-400">02:00 PM - 07:00 PM</span>
                 </li>
               </ul>
             </div>
           </div>
 
           {/* RIGHT: MAP */}
-          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 h-[420px] lg:h-[520px] flex flex-col justify-between shadow-xl">
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 h-105 lg:h-130 flex flex-col justify-between shadow-xl">
             <div className="w-full h-full rounded-xl overflow-hidden border border-zinc-800">
               <iframe
                 title="Stefan Master Club Phuket Location"

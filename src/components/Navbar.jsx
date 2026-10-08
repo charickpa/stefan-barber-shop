@@ -11,7 +11,8 @@ export default function Navbar() {
   const navLinks = [
     { path: "/", label: t("home") },
     { path: "/services", label: t("services") },
-    { path: "/gallery", label: t("gallery") }, // 👈 เพิ่มเมนู Gallery กลับเข้ามาตรงนี้
+    { path: "/gallery", label: t("gallery") },
+    { path: "/booking", label: t("booking") },
     { path: "/contact", label: t("contact") },
   ];
 
@@ -31,7 +32,7 @@ export default function Navbar() {
           </Link>
 
           {/* DESKTOP MENU */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -53,6 +54,14 @@ export default function Navbar() {
             >
               <span>{lang === "en" ? "TH" : "EN"}</span>
             </button>
+
+            {/* ปุ่มจองคิว Desktop CTA */}
+            <Link
+              to="/booking"
+              className="bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold px-4 py-2 rounded-xl text-xs uppercase tracking-wider transition shadow-md shadow-amber-500/20"
+            >
+              {t("bookNow")}
+            </Link>
           </div>
 
           {/* MOBILE BUTTON */}

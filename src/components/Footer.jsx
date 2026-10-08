@@ -51,8 +51,15 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto border-t border-zinc-800/80 pt-6 text-center text-xs text-zinc-500">
-        &copy; {new Date().getFullYear()} Stefan Master Club Phuket. All rights reserved.
+      <div className="max-w-7xl mx-auto border-t border-zinc-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-500 gap-2">
+        <div>
+          &copy; {new Date().getFullYear()} Stefan Master Club Phuket. All rights reserved.
+        </div>
+        <div>
+          <Link to="/admin" className="hover:text-amber-500 text-zinc-600 transition">
+            🔒 จัดการคิว (Admin)
+          </Link>
+        </div>
       </div>
     </footer>
   );

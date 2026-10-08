@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
+import BookingSection from "../components/BookingSection";
 
 // AnimatedCounter Component
 function AnimatedCounter({ end, decimals = 0, duration = 2000, suffix = "" }) {
@@ -165,7 +166,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-[center_top] bg-no-repeat transition-all duration-700"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop')`,
+            backgroundImage: `url('${import.meta.env.BASE_URL}images/hero-bg.jpg')`,
           }}
         />
 
@@ -208,12 +209,12 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            {/* <Link
-              to="/booking"
-              className="bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold px-8 py-4 rounded-xl transition duration-300 shadow-lg shadow-amber-500/20 text-center uppercase tracking-wider"
+            <a
+              href="#booking"
+              className="bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold px-8 py-4 rounded-xl transition duration-300 shadow-lg shadow-amber-500/20 text-center uppercase tracking-wider cursor-pointer"
             >
               {lang === "en" ? "Book Appointment Now" : "จองคิวตัดผมทันที"}
-            </Link> */}
+            </a>
             <Link
               to="/services"
               className="bg-zinc-900/80 hover:bg-zinc-800 text-zinc-200 border border-zinc-700/80 font-semibold px-8 py-4 rounded-xl transition duration-300 text-center backdrop-blur-sm uppercase tracking-wider"
@@ -290,7 +291,7 @@ export default function Home() {
                 : "ตัดแต่งทรงผม สกินเฟดไล่ระดับอย่างประณีต เหมาะกับทุกสภาพผม"}
             </p>
             <span className="text-amber-500 font-bold text-sm">
-              ฿500 - ฿700
+              ฿700
             </span>
           </div>
 
@@ -307,7 +308,7 @@ export default function Home() {
                 : "โกนและเล็มเคราเนี๊ยบๆ พร้อมบริการประคบผ้าหน้าร้อนผ่อนคลาย"}
             </p>
             <span className="text-amber-500 font-bold text-sm">
-              ฿300 - ฿500
+              ฿500
             </span>
           </div>
 
@@ -324,7 +325,7 @@ export default function Home() {
                 : "เชี่ยวชาญการตัดผมแอฟโรโดยเฉพาะ ตัดขอบคมชัด ไล่ทรงสวยสมบูรณ์แบบ"}
             </p>
             <span className="text-amber-500 font-bold text-sm">
-              ฿600 - ฿800
+              ฿800
             </span>
           </div>
         </div>
@@ -414,7 +415,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. CALL TO ACTION (CTA) SECTION */}
+      {/* 5. ONLINE BOOKING SECTION */}
+      <BookingSection />
+
+      {/* 6. CALL TO ACTION (CTA) SECTION */}
       <section className="py-20 px-4 max-w-5xl mx-auto text-center border-t border-zinc-800/80">
         <div className="bg-gradient-to-b from-zinc-900 to-zinc-950 border border-zinc-800 p-10 sm:p-16 rounded-3xl shadow-2xl relative overflow-hidden">
           <div className="relative z-10">
@@ -428,12 +432,12 @@ export default function Home() {
                 ? "Book your slot today and experience the best barbering in Bangtao & Surin."
                 : "จองคิวออนไลน์ล่วงหน้าได้ง่ายๆ ไม่ต้องรอนาน ร้านสะอาด บรรยากาศเป็นกันเอง"}
             </p>
-            {/* <Link
-              to="/booking"
-              className="inline-block bg-amber-500 hover:bg-amber-400 text-zinc-950 font-extrabold px-10 py-4 rounded-xl transition duration-300 shadow-xl shadow-amber-500/20 text-lg"
+            <a
+              href="#booking"
+              className="inline-block bg-amber-500 hover:bg-amber-400 text-zinc-950 font-extrabold px-10 py-4 rounded-xl transition duration-300 shadow-xl shadow-amber-500/20 text-lg cursor-pointer"
             >
               {lang === "en" ? "Book Appointment" : "จองคิวตัดผมตอนนี้"}
-            </Link> */}
+            </a>
           </div>
         </div>
       </section>
